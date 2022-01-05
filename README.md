@@ -22,7 +22,7 @@ usage: make_table.py [--filename FILENAME] [--filament FILAMENT]
 optional arguments:
   -h, --help            show this help message and exit
   --filename    coordinate file, column seoarated by space,
-  --filament    if the points your picking is filamnet like MT or actin otherwise give 0
+  --filament    1 (if the points your picking is filamnet like MT or actin otherwise give 0)
                         
   --binning     provide  binning factor if you picked particels in binned tomograms
                         
