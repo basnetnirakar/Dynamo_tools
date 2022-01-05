@@ -143,7 +143,7 @@ def main(names,filament,binf,output):
                   coord = coordi[coordi[:,0]==i]
                   sort = np.array(sorted(coord, key=lambda x : x[1]))
                   coord_table = np.append(coord_table,sort,axis=0)
-            table[:,23:26] = coord_table[:,0:3]*binf   #input
+            table[:,23:26] = coord_table[:,1:5]*binf   #input
             table[:,21] = coordi[:,0]
             drot =[]
             angular_rot = []
@@ -180,7 +180,7 @@ def main(names,filament,binf,output):
       else:
             ID = False
             coordi = read_coordinates(data,ID)
-            table[:,23:26] = coordi[:,1:3]*binf
+            table[:,23:26] = coordi[:,0:4]*binf
             final_table = table
 
 
