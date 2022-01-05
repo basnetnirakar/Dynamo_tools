@@ -180,7 +180,7 @@ def main(names,filament,binf,output):
       else:
             ID = False
             coordi = read_coordinates(data,ID)
-            table[:,23:26] = coordi[:,0:3]*binf
+            table[:,23:26] = coordi[:,1:3]*binf
             final_table = table
 
 
